@@ -104,7 +104,21 @@ body.transition {
 .huruf-sambung {
     font-family: 'Sacramento', cursive;
 }
+.door-hint {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #666;
+  cursor: pointer;
+  animation: doorPulse 1.8s infinite;
+}
 
+@keyframes doorPulse {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
 /* navbar */
 
 .nav{
@@ -873,4 +887,5 @@ background: var(--pink-muted);
   margin-top: 15px;
   opacity: 0.8;
 }
+
 
